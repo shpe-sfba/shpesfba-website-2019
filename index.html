@@ -50,10 +50,10 @@
 
     <div class="container">
 
-      <div class="logo float-left">
+      <div class="logo float-left d-flex">
         <!-- Uncomment below if you prefer to use an image logo -->
+        <a href="#intro" class="scrollto"><img src="img/nav_logo.png" alt="" class="img-fluid"></a>
         <h1 class="text-light"><a href="#intro" class="scrollto"><span>SHPE SFBA</span></a></h1>
-        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
 
       <nav class="main-nav float-right d-none d-lg-block">
@@ -367,11 +367,11 @@
 
         <div class="row">
 
-          <div class="col-lg-6">
+          <div class="col-lg-12">
 
             <div class="row">
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-lg-4">
 
                   <div class="footer-info">
                     <h3>SHPE SFBA</h3>
@@ -386,28 +386,37 @@
 
                 </div>
 
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-lg-8">
                   <div class="footer-links">
-                    <h4>Useful Links</h4>
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#about">About</a></li>
-                      <li><a href="#services">Events</a></li>
-                      <li><a href="#team">Meet the Board</a></li>
-                      <li><a href="#team">Calender</a></li>
-                      <li><a href="https://shpe.org/">SHPE Inc.</a></li>
-                      <li><a href="http://shperegion1.org">SHPE Region 1</a></li>
-                   </ul>
+                    <h4 class="text-center">Useful Links</h4>
+                    <div class="d-flex">
+                      <div class="half-size text-center">
+                        <ul>
+                          <li><a href="#">Home</a></li>
+                          <li><a href="#about">About</a></li>
+                          <li><a href="#services">Events</a></li>
+                          <li><a href="#team">Meet the Board</a></li>
+                        </ul>
+                      </div>
+                      <div class="half-size text-center">
+                        <ul>
+                          <li><a href="#team">Calender</a></li>
+                          <li><a href="https://shpe.org/">SHPE Inc.</a></li>
+                          <li><a href="http://shperegion1.org">SHPE Region 1</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
                   </div>
 
-                  <div class="footer-links">
+                  <div class="footer-links text-center">
                     <h4>Contact Us</h4>
                     <p>
                       <strong>Email:</strong> shpesfba@gmail.com<br>
                     </p>
                   </div>
 
-                  <div class="social-links">
+                  <div class="social-links text-center">
                     <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
                     <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
                     <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -419,40 +428,6 @@
             </div>
 
           </div>
-
-          <div class="col-lg-6">
-
-            <div class="form">
-              
-              <h4>Send us a message</h4>
-              <p>Eos ipsa est voluptates. Nostrum nam libero ipsa vero. Debitis quasi sit eaque numquam similique commodi harum aut temporibus.</p>
-              <form action="" method="post" role="form" class="contactForm">
-                <div class="form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validation"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validation"></div>
-                </div>
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
-            </div>
-
-          </div>
-
           
 
         </div>

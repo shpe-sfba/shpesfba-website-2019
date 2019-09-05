@@ -209,8 +209,7 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  max-height: 38px;
 }
 
 .main-pages {
@@ -230,14 +229,11 @@ h6 {
 }
 
 #intro .intro-info h2 {
-  color: #413e66;
+  color: white;
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
-}
-
-#intro .intro-info h2 span {
-  color: #1bb1dc;
+  text-align: center;
 }
 
 #intro .intro-info .btn-get-started,
@@ -1312,6 +1308,9 @@ h6 {
   margin: 0;
 }
 
+#footer .footer-top .footer-links .half-size {
+  width: 50%;
+}
 #footer .footer-top .footer-links ul li {
   padding: 8px 0;
 }
