@@ -107,12 +107,6 @@
     });
   });
 
-  // jQuery counterUp (used in Whu Us section)
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
-
   Handlebars.registerHelper("trimString", function(passedString) {
     var theString = passedString.substring(0, 150);
     return new Handlebars.SafeString(theString + "...");
