@@ -1,0 +1,12 @@
+
+{{#each events}}
+<div class="col-md-6 col-lg-6 wow bounceInUp" data-wow-duration="1.4s">
+    <div class="box">
+        <div class="icon" style="background: #fff0da;">
+            <a href="{{url}}"><img src="{{image}}" /></a>
+        </div>
+        <h4 class="title"><a href="{{url}}">{{title}}</a></h4>
+        <p class="description">{{trimString description}}</p>
+    </div>
+</div>
+{{/each}}

@@ -1,10 +1,3 @@
-/*
-  Theme Name: Rapid
-  Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
 
 /*--------------------------------------------------------------
 # General
@@ -229,7 +222,7 @@ h6 {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: #f5f8fd url("../img/meeting.jpg") center top no-repeat;
+    background: #f5f8fd url("../images/meeting.jpg") center top no-repeat;
     background-size: cover;
 }
 

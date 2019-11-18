@@ -1,7 +1,8 @@
+// import $ from "jquery";
+import "bootstrap";
+import "./assets/styles/style.css";
+// Preloader (if the #preloader div exists)
 (async function($) {
-  "use strict";
-
-  // Preloader (if the #preloader div exists)
   $(window).on("load", function() {
     if ($("#preloader").length) {
       $("#preloader")
@@ -107,15 +108,9 @@
     });
   });
 
-  Handlebars.registerHelper("trimString", function(passedString) {
-    var theString = passedString.substring(0, 150);
-    return new Handlebars.SafeString(theString + "...");
-  });
-  var source = document.getElementById("event-template").innerHTML;
-  var template = Handlebars.compile(source);
-  var context = {
-    events: [{ title: "My New Post", description: "This is my first post!" }]
-  };
+  // get events from eventbright and add them to the page dynamically
+
+  var source = require("./components/event-template.hbs");
 
   function getEvents() {
     const url =
@@ -133,15 +128,19 @@
         console.error(error);
       });
   }
-  const data = await getEvents();
-  const events = data.events.map(event => {
-    return {
-      title: event.name.text,
-      description: event.description.text,
-      url: event.url,
-      image: event.logo.original.url
-    };
+
+  getEvents().then(data => {
+    const events = data.events.map(event => {
+      return {
+        title: event.name.text,
+        description: event.description.text,
+        url: event.url,
+        image: event.logo.original.url
+      };
+    });
+    var div = document.createElement("div");
+    var html = source({ events });
+    div.innerHTML = html;
+    $("#services > .container > .row").append(div);
   });
-  var html = template({ events });
-  $("#services > .container > .row").append(html);
 })(jQuery);
