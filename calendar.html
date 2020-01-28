@@ -15,7 +15,10 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', 'UA-106395038-1');
+    gtag('config', 'UA-106395038-1'), {
+        'page_title' : 'calendar',
+        'page_path': location.pathname
+      };
     </script>
 
     <!-- Favicons -->
