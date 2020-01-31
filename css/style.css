@@ -240,6 +240,13 @@ h6 {
     font-weight: 700;
     text-align: center;
 }
+#intro .intro-info {
+    text-align: center;
+}
+
+#banner-button {
+    width: 100%;
+}
 
 #intro .intro-info .btn-get-started,
 #intro .intro-info .btn-services {
@@ -1555,7 +1562,8 @@ h6 {
         padding: 80px 0 60px 0;
     }
     #intro .container {
-        height: auto !important;
+        /* height: auto !important; */
+        height: 100%;
     }
     #intro .intro-img {
         width: 80%;
