@@ -139,7 +139,9 @@
       title: event.name.text,
       description: event.description.text,
       url: event.url,
-      image: event.logo.original.url
+      image:
+        (event && event.logo && event.logo.original.url) ||
+        "https://lh3.googleusercontent.com/OQ41QAbOAeAuXT4_BUlGcxs_lZOGxJ1L19uLOkvvf2gMfo6sfRkBxIMB7IbaCXEws55D"
     };
   });
   var html = template({ events });
