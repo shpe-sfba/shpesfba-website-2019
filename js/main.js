@@ -147,3 +147,6 @@
   var html = template({ events });
   $("#services > .container > .row").append(html);
 })(jQuery);
+function removeNode() {
+  document.querySelector("#instagram .referral").remove();
+}
