@@ -6,3 +6,5 @@ Three main Entry points currently:
 - calendar.html
 
 TODO: refactor so that header and footer isn't duplicated in all three pages
+
+Deploys to GitHub pages after pushing
